@@ -38,5 +38,5 @@ Your server need to met minimal requirements to run hustal
 
 
 ## Copyright and License
-
+Code Copyright 2021 Hustal. Code released under the MIT license.
 
