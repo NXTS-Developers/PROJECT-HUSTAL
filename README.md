@@ -11,6 +11,7 @@ A Simple MOFH clientarea for free like infinityfree and minimal functionality
 - [Introduction](#introduction) 
 - [Features](#features)
 - [Requirements](#requirements) 
+- [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Copyright and License](#copyright-and-license)
 
@@ -27,6 +28,8 @@ Hustal features are listed below:
 - MOFH Api integration 
 - Support system
 
+
+
 ## Requirements
 Your server need to met minimal requirements to run hustal
 - php 5.6 or above
@@ -35,7 +38,7 @@ Your server need to met minimal requirements to run hustal
 
 ## Installation 
 
-
+## Dependencies
 
 ## Copyright and License
 Code Copyright 2021 Hustal. Code released under the MIT license.
