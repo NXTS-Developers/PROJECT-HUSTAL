@@ -39,7 +39,7 @@ Installation of hustal is much then you think
 - Download the hustal zip file. 
 - Extract it to your root folder of your domain. 
 - Open config.php file in includes folder and edit details bellow
-- ```
+```
 // database information 
 define('DB_HOST','Databse Hostname');// localhost
 define('DB_USER','Databse Username');// root
