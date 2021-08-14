@@ -35,7 +35,9 @@ Your server need to met minimal requirements to run hustal
 - composer
 
 ## Installation 
-
+Installation of hustal is much then you think 
+1- download the hustal zip file. 
+-- Extract it to your root folder of your domain. 
 ## Dependencies
 The following libraries are required to run hustal
 - phpmailer
