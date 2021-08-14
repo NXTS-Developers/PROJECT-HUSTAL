@@ -2,8 +2,9 @@
 - [Introduction](#introduction) 
 - [Features](#features)
 - [Requirements](#requirements) 
-- [Dependencies](#dependencies)
 - [Installation](#installation)
+- [Dependencies](#dependencies)
+- [Contributer](#contributer)
 - [Copyright](#copyright-and-license)
 
 ## Introduction 
@@ -71,6 +72,8 @@ The following libraries are required to run hustal
 - psr4
 - user info
 
+## Contributer
+The build is created and modified by [Mahtab Hassan](https://github.com/mahtab2003)
 ## Copyright
 Code Copyright 2021 Hustal. Code released under the MIT license.
 
