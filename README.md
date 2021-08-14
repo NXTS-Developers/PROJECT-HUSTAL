@@ -36,8 +36,12 @@ Your server need to met minimal requirements to run hustal
 
 ## Installation 
 Installation of hustal is much then you think 
-1- download the hustal zip file. 
--- Extract it to your root folder of your domain. 
+- Download the hustal zip file. 
+- Extract it to your root folder of your domain. 
+- Open config.php file in includes folder and edit details.
+- Setup database according to DATABASE.md file
+- All done. Enjoy free hosting.
+
 ## Dependencies
 The following libraries are required to run hustal
 - phpmailer
