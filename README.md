@@ -30,7 +30,6 @@ Hustal features are listed below:
 Your server need to met minimal requirements to run hustal
 - php 5.6 or above
 - mysql 5.7 or above
-- composer
 
 ## Installation 
 Installation of hustal is much then you think 
@@ -69,7 +68,7 @@ The following libraries are required to run hustal
 - phpmailer
 - anake-whm-api
 - guzzle
-- psr4
+- composer
 - user info
 
 ## Contributer
