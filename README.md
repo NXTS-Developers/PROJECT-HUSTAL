@@ -13,7 +13,7 @@ A Simple MOFH clientarea for free like infinityfree and minimal functionality
 - [Requirements](#requirements) 
 - [Dependencies](#dependencies)
 - [Installation](#installation)
-- [Copyright and License](#copyright-and-license)
+- [Copyright](#copyright-and-license)
 
 ## Introduction 
 Project Hustal is a free of cost MOFH clientarea for account management and support services. It have easy to use interface and a much like infinityfree free like light interface. 
@@ -28,8 +28,6 @@ Hustal features are listed below:
 - MOFH Api integration 
 - Support system
 
-
-
 ## Requirements
 Your server need to met minimal requirements to run hustal
 - php 5.6 or above
@@ -39,7 +37,13 @@ Your server need to met minimal requirements to run hustal
 ## Installation 
 
 ## Dependencies
+The following libraries are required to run hustal
+- phpmailer
+- anake-whm-api
+- guzzle
+- psr4
+- user info
 
-## Copyright and License
+## Copyright
 Code Copyright 2021 Hustal. Code released under the MIT license.
 
