@@ -39,7 +39,7 @@ Installation of hustal is much then you think
 - Download the hustal zip file. 
 - Extract it to your root folder of your domain. 
 - Open config.php file in includes folder and edit details bellow
-```
+- ```
 // database information 
 define('DB_HOST','Databse Hostname');// localhost
 define('DB_USER','Databse Username');// root
@@ -55,6 +55,7 @@ define('SITE_IP','185.27.134.46');// MOFH Server IP
 define('API_USER','MOFH WHMCS API Username');// resellerpanel -> whmcs -> api 
 define('API_PASS','MOFH WHMCS API Password');// resellerpanel -> whmcs -> api 
 define('API_PLAN','MOFH Reseller Plan Name');// resellerpanel -> plans -> plan name
+// note: remember to add your server ip to reseller panel
 // Mail Settings
 define('MAIL_PORT','SMTP PORT');// 587
 define('MAIL_USER','SMTP Username');// example@example.com
