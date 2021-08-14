@@ -61,7 +61,7 @@ define('MAIL_USER','SMTP Username');// example@example.com
 define('MAIL_PASS','SMTP Password');// example123
 define('MAIL_HOST','SMTP Host');// smtp.example.com
 ```
-- Setup database according to DATABASE.md file
+- Setup database according to [DATABASE.md](DATABASE.md) file
 - All done. Enjoy free hosting.
 
 ## Dependencies
