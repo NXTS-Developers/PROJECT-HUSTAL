@@ -29,6 +29,6 @@ $mail->Body=" <div class='container' style='margin-left:5%;margin-right:5%;margi
 <hr>
 <h4 style='text-align:center;'><b>Need our help?</b></h4><p style='text-align:center'><a href='https://$host/contact.php' style='color:orange;text-decoration:none;margin:0;'>We are here to help you out!</a></p>
 </div>
-</div>"
+</div>";
 $mail->send();
 ?>
