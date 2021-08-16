@@ -23,7 +23,7 @@ Now go to customization and Default Index Page and add following lines
 </head>
 <body>
 <h2 style="text-align:center">Congratulations</h2>
-<p style="text-align:center">Your account have been created successfully please change your website files using filemanager or ftp</p>
+<p style="text-align:center">Your account have been created successfully please change your website files using file manager or ftp</p>
 </body>
 </html>
 ```
