@@ -16,11 +16,11 @@ unset($_SESSION['msg']);
 ?>
 <div class="mb-3">
 <label class="form-label text-muted">Label</label>
-<input type="text" name="label" class="form-control" placeholder="Account Label">
+<input type="text" name="label" class="form-control" placeholder="Account Label" required>
 </div>
 <div class="mb-3">
 <label class="form-label text-muted">Username</label>
-<input type="text" name="username" class="form-control" pattern=".{8,8}" placeholder="Username: Must have 8 letters">
+<input type="text" name="username" class="form-control" pattern=".{8,8}" placeholder="Username: Must have 8 letters" required>
 </div>
 <div class="mb-3">
 <label class="form-label text-muted">Domain</label>
@@ -30,7 +30,7 @@ unset($_SESSION['msg']);
 <input type="hidden" name="id" value="<?php echo $user['client_id'];?>">
 <div class="mb-3">
 <label class="form-label text-muted">Password</label>
-<input type="password" name="password" class="form-control" pattern=".{8,35}" placeholder="Password: Must between 8 to 35 letters">
+<input type="password" name="password" class="form-control" pattern=".{8,35}" placeholder="Password: Must between 8 to 35 letters" required>
 </div>
 <div class="d-grid">
 <input type="submit" name="create" class="btn btn-success" value="CREATE ACCOUNT">
