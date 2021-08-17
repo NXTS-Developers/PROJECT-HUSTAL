@@ -3,11 +3,9 @@ $title=$_GET['aid'];
 $desc="";
 include "includes/header.php";
 $sql=mysqli_fetch_assoc(mysqli_query($connect,"select * from vhost_cpanel where cpanel_username='".$_GET['aid']."'"));
-if($sql['client_id']!=$user['client_id']){
 $pwd='{"t":"ftp","c":{"v":1,"p":"'.$sql['cpanel_password'].'"}}';
 $hash=base64_encode($pwd);
-}
-else{
+if($sql['client_id']!=$user['client_id']){
 header('location: login.php');
 }
 ?>
