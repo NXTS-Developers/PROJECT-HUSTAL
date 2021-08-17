@@ -1,1 +1,4 @@
-
+/clientarea/mail/signup.php line 32 fixed
+/clientarea/cpanel.php line 6 fixed
+/clientarea/account.php line 8 fixed
+/clientarea/function/logout.php line 4 fixed
