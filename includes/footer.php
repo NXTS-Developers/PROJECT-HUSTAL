@@ -23,7 +23,7 @@
 <div class="col-lg-3 col-md-3 col-sm-12"><br>
 <ul class="list-unstyled">
 <li><h5><b>Partners</b></h5></li>
-<li><a href="https://ifast.net" style="text-decoration:none;" class="text-dark" >iFast.Net</a></li>
+<li><a href="https://ifastnet.com" style="text-decoration:none;" class="text-dark" >iFast.Net</a></li>
 <li><a href="https://cloudflare.com" style="text-decoration:none;" class="text-dark" >Cloudflare</a></li>
 </ul><br>
 </div>
