@@ -25,7 +25,7 @@ InfinityFree is sponsored by iFastNet, a provider of powerful, low cost web host
 
 <small><i class="fa fa-check-circle-o"></i> Superfast SSD Powered Servers</small><br>
 <small><i class="fa fa-check-circle-o"></i> cPanel with Softaculous</small><br>
-<br><a href="https://ifastnet.com/portal/aff.php?aff=28427" class="btn d-grid btn-outline-success">Learn More</a>
+<br><a href="https://ifastnet.com/portal/aff.php?aff=<?php echo AFF_ID?>" class="btn d-grid btn-outline-success">Learn More</a>
 </div>
 </div> <br><br>
 </div>
@@ -135,7 +135,7 @@ Here are some other great features which are only available with iFastNet premiu
 <li class="list-group-item text-center text-muted">More Server Power</li>
 <li class="list-group-item text-center text-muted">Unlimited Daily Hits</li>
 <li class="list-group-item text-center text-muted bg-light">
-<a href="https://ifastnet.com/portal/aff.php?aff=28427&a=add&pid=86" class="btn btn-dark">Order Now</a>
+<a href="https://ifastnet.com/portal/aff.php?aff=<?php echo AFF_ID?>&a=add&pid=86" class="btn btn-dark">Order Now</a>
 </li>
 </ul>
 </div>
@@ -153,7 +153,7 @@ Here are some other great features which are only available with iFastNet premiu
 <li class="list-group-item text-center text-muted">Most Server Power</li>
 <li class="list-group-item text-center text-muted">Unlimited Daily Hits</li>
 <li class="list-group-item text-center text-muted bg-light">
-<a href="https://ifastnet.com/portal/aff.php?aff=28427&a=add&pid=88" class="btn btn-dark">Order Now</a>
+<a href="https://ifastnet.com/portal/aff.php?aff=<?php echo AFF_ID?>&a=add&pid=88" class="btn btn-dark">Order Now</a>
 </li>
 </ul>
 </div><br>
