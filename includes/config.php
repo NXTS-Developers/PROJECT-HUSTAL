@@ -10,6 +10,7 @@ define('SITE_NAME','Website Name');// Flexhost
 define('SITE_EMAIL','Website Email');// example@example.com
 define('SITE_PHONE','Website Phone Number');// +1 000 00000000
 define('SITE_IP','185.27.134.46');// MOFH Server IP
+define('AFF_ID','Afflicte ID');// iFastNet Afflicte ID
 // API Settings
 define('API_USER','MOFH WHMCS API Username');// resellerpanel -> whmcs -> api 
 define('API_PASS','MOFH WHMCS API Password');// resellerpanel -> whmcs -> api 
