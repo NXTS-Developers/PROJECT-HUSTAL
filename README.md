@@ -1,13 +1,4 @@
-## Table of Contents
-- [Introduction](#introduction) 
-- [Features](#features)
-- [Requirements](#requirements) 
-- [Installation](#installation)
-- [Dependencies](#dependencies)
-- [Contributer](#contributer)
-- [Copyright](#copyright-and-license)
-
-## Introduction 
+## Project Hustal
 Project Hustal is a free of cost MOFH clientarea for account management and support services. It have easy to use interface and a much like infinityfree free like light interface. 
 
 ![AppVeyor](https://img.shields.io/badge/Licence-MIT-lightgrey)
@@ -15,6 +6,14 @@ Project Hustal is a free of cost MOFH clientarea for account management and supp
 ![AppVeyor](https://img.shields.io/badge/Build-passing-lightgreen)
 ![AppVeyor](https://img.shields.io/badge/dependencies-php-lightgrey)
 ![AppVeyor](https://img.shields.io/badge/Interface-light-lightgrey)
+
+## Table of Content 
+- [Features](#features)
+- [Requirements](#requirements) 
+- [Installation](#installation)
+- [Dependencies](#dependencies)
+- [Contributer](#contributer)
+- [Copyright](#copyright)
 
 ## Features
 Hustal features are listed below:
