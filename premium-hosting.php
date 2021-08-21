@@ -117,7 +117,7 @@ Here are some other great features which are only available with iFastNet premiu
 <li class="list-group-item text-center text-muted">Limited Server Power</li>
 <li class="list-group-item text-center text-muted">50,000 Daily Hits</li>
 <li class="list-group-item text-center text-muted bg-light">
-<a href="#" class="btn btn-dark">Register Now</a>
+<a href="clientarea/" class="btn btn-dark">Register Now</a>
 </li>
 </ul>
 </div>
@@ -135,7 +135,7 @@ Here are some other great features which are only available with iFastNet premiu
 <li class="list-group-item text-center text-muted">More Server Power</li>
 <li class="list-group-item text-center text-muted">Unlimited Daily Hits</li>
 <li class="list-group-item text-center text-muted bg-light">
-<a href="https://ifastnet.com/portal/aff.php?aff=28427&a=add&pid=86" class="btn btn-dark">Order Now</a>
+<a href="https://ifastnet.com/portal/aff.php?aff=<?php echo AFF_ID;?>" class="btn btn-dark">Order Now</a>
 </li>
 </ul>
 </div>
@@ -153,7 +153,7 @@ Here are some other great features which are only available with iFastNet premiu
 <li class="list-group-item text-center text-muted">Most Server Power</li>
 <li class="list-group-item text-center text-muted">Unlimited Daily Hits</li>
 <li class="list-group-item text-center text-muted bg-light">
-<a href="https://ifastnet.com/portal/aff.php?aff=28427&a=add&pid=88" class="btn btn-dark">Order Now</a>
+<a href="https://ifastnet.com/portal/aff.php?aff=<?php echo AFF_ID;?>" class="btn btn-dark">Order Now</a>
 </li>
 </ul>
 </div><br>
