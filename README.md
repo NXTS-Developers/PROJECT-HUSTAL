@@ -1,5 +1,5 @@
 ## Project Hustal
-Project Hustal is a free of cost MOFH clientarea for account management and support services. It have easy to use interface and a much like infinityfree free like light interface. 
+Project Hustal is a free of cost MOFH clientarea for account management and support services. It have easy to use features and a much like infinityfree.net interface. 
 
 ![AppVeyor](https://img.shields.io/badge/Licence-MIT-lightgrey)
 ![AppVeyor](https://img.shields.io/badge/Version-v1.0.0-lightgrey)
