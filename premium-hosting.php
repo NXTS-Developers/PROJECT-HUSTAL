@@ -25,7 +25,7 @@ InfinityFree is sponsored by iFastNet, a provider of powerful, low cost web host
 
 <small><i class="fa fa-check-circle-o"></i> Superfast SSD Powered Servers</small><br>
 <small><i class="fa fa-check-circle-o"></i> cPanel with Softaculous</small><br>
-<br><a href="https://ifastnet.com/portal/aff.php?aff=28427" class="btn d-grid btn-outline-success">Learn More</a>
+<br><a href="https://ifastnet.com/portal/aff.php?aff=<?php echo AFF_ID;?>" class="btn d-grid btn-outline-success">Learn More</a>
 </div>
 </div> <br><br>
 </div>
