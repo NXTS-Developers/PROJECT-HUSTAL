@@ -35,7 +35,7 @@ unset($_SESSION['msg']);
 <input class="form-control" type="password" name="password" placeholder="Enter Password">
 </div>
 <div class="mb-3">
-<input type="checkbox" class="form-check-input" name="check" value="1"> <label class="form-check-label">Remmeber me</label>
+<input type="checkbox" class="form-check-input" name="check" value="1"> <label class="form-check-label">Remember me</label>
 </div>
 <div class="d-grid">
 <input class="btn btn-success" type="submit" name="login" value="LOGIN">
