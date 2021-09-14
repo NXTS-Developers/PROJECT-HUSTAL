@@ -4,12 +4,14 @@ if(!isset($_COOKIE['client'])){
 $_SESSION['msg']='<div class="alert alert-danger" role="alert">Login to continue</div>';
 header("location: ./login.php");
 }
+else{
 $sql=mysqli_query($connect,"select * from vhost_client where client_email='".$_COOKIE['client']."'");
-if(!mysqli_num_rows($sql)>0){
-header('location: ./login.php');
+if(mysqli_num_rows($sql)>0){
+$user=mysqli_fetch_assoc($sql);
 }
 else{
-$user=mysqli_fetch_assoc($sql);
+header('location: login.php');
+}
 }
 ?>
 <!DOCTYPE HTML>
@@ -71,6 +73,6 @@ $user=mysqli_fetch_assoc($sql);
 <!-- Main Content -->
 <?php
 if($user['client_status']==0){
-echo '<div class="container"><div class="alert alert-danger" role="alert"><span class="pull-left"><small>Please confirm your account</small></span> <a style="text-decoration:none" class="btn btn-warning btn-sm pull-right" href="resend.php?uid='.$_COOKIE['client'].'"><small>Resend Email</small></a><div class="clearfix"></div></div></div>';
+header('location: ./validate.php');
 }
 ?>
