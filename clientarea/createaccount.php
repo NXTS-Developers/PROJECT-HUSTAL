@@ -20,13 +20,12 @@ unset($_SESSION['msg']);
 </div>
 <div class="mb-3">
 <label class="form-label text-muted">Username</label>
-<input type="text" name="username" class="form-control" pattern=".{8,8}" placeholder="Username: Must have 8 letters" required>
+<input type="text" name="username" class="form-control" pattern=".{8,8}" placeholder="Automatically generated" disabled>
 </div>
 <div class="mb-3">
 <label class="form-label text-muted">Domain</label>
-<p class="text-muted"><?php echo $_SESSION['domain'];?></p>
+<input type="text" name="domain" class="form-control disabled" value='<?php echo $_SESSION['domain'];?>' readonly>
 </div>
-<input type="hidden" name="domain" value="<?php echo $_SESSION['domain'];?>">
 <input type="hidden" name="id" value="<?php echo $user['client_id'];?>">
 <div class="mb-3">
 <label class="form-label text-muted">Password</label>
