@@ -41,7 +41,8 @@ $result="2";
 $uname=$response->getVpUsername();
 $passwd=$tsData['password'];
 if($result==0){
-$_SESSION['msg']="<div class='alert alert-warning' role='alert'>".$response->getMessage()."</div>";
+$Message = $response->getData();
+$_SESSION['msg']="<div class='alert alert-warning' role='alert'>".$Message['result']['statusmsg']."</div>";
 header("location: ../accounts.php"); 
 }
 if($result==1){
