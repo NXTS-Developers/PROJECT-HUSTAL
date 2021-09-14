@@ -4,7 +4,13 @@ if(!isset($_COOKIE['client'])){
 $_SESSION['msg']='<div class="alert alert-danger" role="alert">Login to continue</div>';
 header("location: ./login.php");
 }
-$user=mysqli_fetch_assoc(mysqli_query($connect,"select * from vhost_client where client_email='".$_COOKIE['client']."'"));
+$sql=mysqli_query($connect,"select * from vhost_client where client_email='".$_COOKIE['client']."'");
+if(!mysqli_num_rows($sql)>0){
+header('location: ./login.php');
+}
+else{
+$user=mysqli_fetch_assoc($sql);
+}
 ?>
 <!DOCTYPE HTML>
 <html lang="en">
