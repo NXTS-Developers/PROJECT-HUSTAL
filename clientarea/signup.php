@@ -1,6 +1,6 @@
 <?php
 include "includes/connect.php";
-if(!isset($_COOKIE['client'])){
+if($_COOKIE['client']=='NULL'||!isset($_COOKIE['client'])){
 ?>
 <html>
 <head>
