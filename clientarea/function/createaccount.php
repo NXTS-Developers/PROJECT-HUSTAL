@@ -29,10 +29,10 @@ $request=$client->createAccount([
 // sending request
 $response=$request->send();
 //receiving respond
+elseif((int)$response->isSuccessful()==1&&strlen($response->getMessage())>1)
+$result="1";
 if((int)$response->isSuccessful()==0&&strlen($response->getMessage())>1)
 $result="0";
-elseif((int)$response->isSuccessful()==1&&(int)$response->getMessage()==1)
-$result="1";
 elseif((int)$response->isSuccessful()==0&&(int)$response->getMessage()==0)
 $result="2";
 // showing results
