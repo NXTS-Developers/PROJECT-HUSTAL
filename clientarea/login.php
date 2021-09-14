@@ -3,7 +3,7 @@ ob_start();
 session_start();
 include "../includes/config.php";
 require_once "../vendor/user_info/UserInfo.php";
-if(!isset($_COOKIE['client'])){
+if($_COOKIE['client']=='NULL'||!isset($_COOKIE['client'])){
 ?>
 <html>
 <head>
