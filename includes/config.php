@@ -20,4 +20,7 @@ define('MAIL_PORT','SMTP PORT');// 587
 define('MAIL_USER','SMTP Username');// example@example.com
 define('MAIL_PASS','SMTP Password');// example123
 define('MAIL_HOST','SMTP Host');// smtp.example.com
+// SSL Info
+define('SSL_USERNAME', 'Mahtabhassan159@gmail.com');
+define('SSL_PASSWORD', '1aa902f1aa01d1eba782dd51cc8d2ff9');
 ?>
