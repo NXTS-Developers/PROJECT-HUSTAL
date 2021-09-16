@@ -16,7 +16,7 @@
 <div class="col-lg-3 offset-lg-2 col-md-3 offest-md-2 col-sm-12"><br>
 <ul class="list-unstyled">
 <li><h5><b>Company</b></h5></li>
-<li><a href="privacy.php" style="text-decoration:none;" class="text-dark">Privacy Plicy</a></li>
+<li><a href="privacy.php" style="text-decoration:none;" class="text-dark">Privacy Policy</a></li>
 <li><a href="contact.php" style="text-decoration:none;" class="text-dark" >Contact us</a></li>
 </ul>
 </div>
