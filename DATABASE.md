@@ -47,6 +47,15 @@ CREATE TABLE IF NOT EXISTS `vhost_cpanel` (
   PRIMARY KEY (`cpanel_id`)
 ) 
 ```
+## To create ssl table setup
+```
+CREATE TABLE IF NOT EXISTS `vhost_ssl` (
+  `ssl_id` int(11) NOT NULL AUTO_INCREMENT,
+  `ssl_key` int(11) NOT NULL,
+  `client_id` int(11) NOT NULL,
+  PRIMARY KEY (`ssl_id`)
+)
+```
 ## Support ticket table setup
 ```
 CREATE TABLE IF NOT EXISTS `vhost_ticket` (
