@@ -43,13 +43,19 @@ header('location: login.php');
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 <li class="nav-item"> <a class="nav-link" aria-current="page" href="home.php">Home</a></li>
 </li>
 <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accounts</a>
 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 <li><a class="dropdown-item" href="accounts.php">View Accounts</a></li>
 <li><a class="dropdown-item" href="domainchecker.php">Add Account</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Get SSL</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+<li><a class="dropdown-item" href="ssls.php">View SSL</a></li>
+<li><a class="dropdown-item" href="newssl.php">Add SSL</a></li>
 </ul>
 </li>
 <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tickets</a>
