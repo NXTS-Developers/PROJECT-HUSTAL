@@ -22,6 +22,7 @@ Hustal features are listed below:
 - Validation / Verification 
 - Account Management 
 - Account Settings 
+- GoGetSSL Api integration
 - MOFH Api integration 
 - Support system
 
@@ -58,6 +59,9 @@ define('MAIL_PORT','SMTP PORT');// 587
 define('MAIL_USER','SMTP Username');// example@example.com
 define('MAIL_PASS','SMTP Password');// example123
 define('MAIL_HOST','SMTP Host');// smtp.example.com
+// SSL Settings 
+define('SSL_USERNAME',SSL API Username');// example@example.com
+define('SSL_PASSWORD','SSL API Password');// example123
 </pre>
 - Setup database according to [DATABASE.md](DATABASE.md) file.
 - Setup rules using [SETUP.md](SETUP.md) file. 
@@ -70,6 +74,7 @@ The following libraries are required to run hustal
 - guzzle
 - composer
 - user info
+- gogetssl
 
 ## Contributer
 The build is created and modified by [Mahtab Hassan](https://github.com/mahtab2003)
