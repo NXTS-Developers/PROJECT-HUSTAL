@@ -27,7 +27,7 @@ include 'includes/connect.php';
 <div class="mx-3 my-5 card card-body text-center">
 <h3>Validation Error</h3>
 <p>You need to validate your account before you can use our free hosting service please click on the link that had been sent your registered email address.</p>
-<div><a href='resend.php?uid=<?php echo $user['client_email']?>' class='btn btn-primary mx-1'>Resend Email</a><a href='logout.php' class='btn btn-danger'>Logout</a></div>
+<div><a href='resend.php?uid=<?php echo $user['client_email']?>' class='btn btn-primary mx-1'>Resend Email</a><a href='function/logout.php' class='btn btn-danger'>Logout</a></div>
 </div>
 </div>
 </div>
