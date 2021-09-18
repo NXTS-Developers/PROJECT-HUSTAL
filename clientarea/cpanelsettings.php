@@ -9,7 +9,7 @@ header('location: accounts.php');
 }
 $sql=mysqli_fetch_assoc($sl);
 ?>
-<div class="container">
+<div class="container"><br>
 <?php
 if(isset($_SESSION['msg'])){
 echo $_SESSION['msg'];
