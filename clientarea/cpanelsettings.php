@@ -3,7 +3,11 @@ $title="Edit Settings.php - ".$_GET['aid'];
 $desc="";
 include "includes/header.php";
 if(isset($_GET['aid'])){
-$sql=mysqli_fetch_assoc(mysqli_query($connect,"select * from vhost_cpanel where cpanel_username='".$_GET['aid']."'"));
+$sl=mysqli_query($connect,"select * from vhost_cpanel where cpanel_username='".$_GET['aid']."' and client_id='".$user['client_id']."'");
+if(!mysqli_num_rows($sl)>0){
+header('location: accounts.php');
+}
+$sql=mysqli_fetch_assoc($sl);
 ?>
 <div class="container">
 <?php
