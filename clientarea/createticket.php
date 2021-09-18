@@ -3,7 +3,7 @@ $title="Create Ticket";
 $desc="";
 include "includes/header.php";
 ?>
-<div class="container">
+<div class="container"><br>
 <?php
 if(isset($_SESSION['msg'])){
 echo $_SESSION['msg'];
