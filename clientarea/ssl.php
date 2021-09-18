@@ -1,5 +1,5 @@
 <?php
-$title=$_GET['sid'];
+$title='SSL #'. $_GET['sid'];
 $desc="";
 include "includes/header.php";
 require '../vendor/gogetssl/GoGetSSLApi.php';
