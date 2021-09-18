@@ -44,7 +44,7 @@ elseif($app['status']=='expired'){
 $status="<span class='badge bg-danger'> Expired </span>";
 }
 echo "<tr>
-<td>$id</td>
+<td>#$id</td>
 <td>$domain</td>
 <td>$status</td>
 <td>DNS</td>
