@@ -2,7 +2,11 @@
 $title="Ticket #".$_GET['tid'];
 $desc="";
 include "includes/header.php";
-$ticket=mysqli_fetch_assoc(mysqli_query($connect,"select * from vhost_ticket where ticket_id='".$_GET['tid']."'"));
+$sl=mysqli_query($connect,"select * from vhost_ticket where ticket_id='".$_GET['tid']."' and client_id='".$user['client_id']."'");
+if(!mysqli_num_rows($sl)>0){
+header('location: tickets.php');
+}
+$ticket=mysqli_fetch_assoc($sl);
 ?>
 <h3 class="text-center"><b>Ticket #<?php echo $_GET['tid'];?></b></h3>
 <div class="container"><br>
