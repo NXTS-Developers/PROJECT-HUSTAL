@@ -24,6 +24,15 @@ include "includes/header.php";
 </div>
 </div>
 <div class="col-lg-6 col-md-6"><br>
+<div class="card shadow-sm rounded"><br>
+<a href="tickets.php" style="text-decoration:none;" class="text-dark"><div class="card-body text-center">
+<i class="fa fa-support fa-5x"></i><br><br>
+<h5 class="text-muted">Support Tickets(<?php echo mysqli_num_rows(mysqli_query($connect,"select * from vhost_ssl where client_id='".$user['client_id']."'"));?>)</h5>
+</div>
+</a>
+</div>
+</div>
+<div class="col-lg-6 col-md-6"><br>
 <div class="card shadow-sm rounded">
 <div class="card-body">
 <span><b>Client Information</b></span><hr>
@@ -38,17 +47,6 @@ echo "<br><b>Service Domain: </b>".SITE_ADDR;
 ?>
 </div>
 </div>
-</div>
-<div class="col-lg-6 col-md-6"><br>
-<div class="card shadow-sm rounded">
-<div class="card-body">
-<span><b>Service Update</b></span><hr>
-<h5 class="text-muted">All of the data will be backed up before system up date and service will be closed for 6 hours.</h5>
-<h4 class="text-center"><b>Estimated Time</b></h4>
-<div id="clockdiv"> 
-<h6 class="text-center"><span class="days" id="day"></span>D : <span class="days" id="hour"></span>H : <span class="days" id="minute"></span>M : <span class="days" id="second"></span> S</h6>
-</div>
-</div><br>
 </div><br>
 <script>
 var deadline = new Date("4 26, 2021 12:00:00").getTime(); 
