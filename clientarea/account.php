@@ -75,7 +75,7 @@ Account Details
 </tr>
 <tr class="list-group-item">
 <td><small class="text-muted"><b>Hosting Volume</b></small></td>
-<td><small class="text-muted px-3">(Defined in cPanel)</small></td>
+<td><small class="text-muted px-3">Unknown</small></td>
 </tr>
 <tr class="list-group-item">
 <td><small class="text-muted"><b>Date Created</b></small><span class="px-3"></span></td>
@@ -100,7 +100,7 @@ MySQL Details
 </tr>
 <tr class="list-group-item">
 <td><small class="text-muted"><b>MySQL Hostname</b></small><span class="px-1"></span></td>
-<td><small class="text-muted px-4">(Defined in cPanel)</small></td>
+<td><small class="text-muted px-4">sqlxxx.byethost.org</small></td>
 </tr>
 <tr class="list-group-item">
 <td><small class="text-muted"><b>MySQL Port</b></small><span class="px-2"></span></td>
