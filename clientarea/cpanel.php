@@ -16,7 +16,7 @@ header('location: login.php');
 <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<div class="container">
+<div class="container"><br>
 <div class="card" style="margin-top:20%;">
 <div class="card-body"><br>
 <h5 class="text-center">Login into <?php echo $_GET['aid'];?></h5>
