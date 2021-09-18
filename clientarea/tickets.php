@@ -38,7 +38,7 @@ $status="Closed";
 }
 echo "<tr>
 <td>#$id</td>
-<td>$date</td>
+<td class='text-truncate'>$date</td>
 <td>$status</td>
 <td><a href='ticket.php?tid=$id' class='btn btn-success btn-sm'>Manage</a></td>
 </tr>";
@@ -53,5 +53,5 @@ echo '<tr><td colspan="4" class="text-center">No Tickets Yet</td></tr>';
 </div>
 <small class="text-muted"><?php echo mysqli_num_rows($sql);?> tickets found</small>
 </div>
-</div>
+</div> 
 </div>
