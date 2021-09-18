@@ -1,5 +1,21 @@
 <?php
 include 'includes/connect.php';
+if(!isset($_COOKIE['client']||$_COOKIE['client']=='NULL')){
+$_SESSION['msg']='<div class="alert alert-danger" role="alert">Login to continue</div>';
+header("location: ./login.php");
+}
+else{
+$sql=mysqli_query($connect,"select * from vhost_client where client_email='".$_COOKIE['client']."'");
+if(mysqli_num_rows($sql)>0){
+$user=mysqli_fetch_assoc($sql);
+}
+else{
+header('location: login.php');
+}
+}
+if($user['client_status']!=0){
+header('location: index.php');
+}
 ?>
 <!DOCTYPE HTML>
 <html lang="en">
