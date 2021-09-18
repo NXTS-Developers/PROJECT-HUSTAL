@@ -36,39 +36,39 @@ header('location: login.php');
 </head>
 <body class="bg-white">
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-white bg-white">
 <div class="container-fluid">
-<a class="navbar-brand" href="index.php"><?php echo SITE_NAME;?></a>
+<a class="navbar-brand text-dark" href="index.php"><?php echo SITE_NAME;?></a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
+<span class="fa fa-bars text-dark"></span>
 </button>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-<li class="nav-item"> <a class="nav-link" aria-current="page" href="home.php">Home</a></li>
+<li class="nav-item"> <a class="nav-link text-dark" aria-current="page" href="home.php">Home</a></li>
 </li>
-<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accounts</a>
+<li class="nav-item dropdown"> <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accounts</a>
 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-<li><a class="dropdown-item" href="accounts.php">View Accounts</a></li>
-<li><a class="dropdown-item" href="domainchecker.php">Add Account</a></li>
+<li><a class="dropdown-item text-dark" href="accounts.php">View Accounts</a></li>
+<li><a class="dropdown-item text-dark" href="domainchecker.php">Add Account</a></li>
 </ul>
 </li>
-<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Get SSL</a>
+<li class="nav-item dropdown"> <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Get SSL</a>
 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-<li><a class="dropdown-item" href="ssls.php">View SSL</a></li>
-<li><a class="dropdown-item" href="newssl.php">Add SSL</a></li>
+<li><a class="dropdown-item text-dark" href="ssls.php">View SSL</a></li>
+<li><a class="dropdown-item text-dark" href="newssl.php">Add SSL</a></li>
 </ul>
 </li>
-<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tickets</a>
+<li class="nav-item dropdown"> <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tickets</a>
 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-<li><a class="dropdown-item" href="tickets.php">View Tickets</a></li>
-<li><a class="dropdown-item" href="createticket.php">Add Ticket</a></li>
+<li><a class="dropdown-item text-dark" href="tickets.php">View Tickets</a></li>
+<li><a class="dropdown-item text-dark" href="createticket.php">Add Ticket</a></li>
 </ul>
 </li>
 </li>
-<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Hi <?php echo $user['client_name'];?> </a>
+<li class="nav-item dropdown"> <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Hi <?php echo $user['client_name'];?> </a>
 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-<li><a class="dropdown-item" href="accountsettings.php">Settings</a></li>
-<li><a class="dropdown-item" href="function/logout.php">Logout</a></li>
+<li><a class="dropdown-item text-dark" href="accountsettings.php">Settings</a></li>
+<li><a class="dropdown-item text-dark" href="function/logout.php">Logout</a></li>
 </ul>
 </li>
 </li>
