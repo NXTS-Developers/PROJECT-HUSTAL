@@ -46,7 +46,7 @@ $_SESSION['msg']="<div class='alert alert-warning' role='alert'>".$Message['resu
 header("location: ../accounts.php"); 
 }
 if($result==1){
-$sql=mysqli_query($connect,"insert into vhost_cpanel(client_id,cpanel_username,cpanel_client_username,cpanel_password,cpanel_status,cpanel_date,cpanel_label,cpanel_domain) values ('".$_POST['id']."','".$response->getVpUsername()."','".$tsData['username']."','".$tsData['password']."','1','".date("d-m-Y")."','".$_POST['label']."','".$_POST['domain']."')");
+$sql=mysqli_query($connect,"insert into vhost_cpanel(client_id,cpanel_username,cpanel_client_username,cpanel_password,cpanel_status,cpanel_date,cpanel_label,cpanel_domain) values ('".$_POST['id']."','".$response->getVpUsername()."','".$tsData['username']."','".$tsData['password']."','1','".date("d-m-Y")."','".$_POST['label']."','".strtolower($_POST['domain'])."')");
 $_SESSION['msg']="<div class='alert alert-success' role='alert'>Account  created successfully</div>";
 include "../mail/newaccount.php";
 header("location: ../accounts.php"); 
