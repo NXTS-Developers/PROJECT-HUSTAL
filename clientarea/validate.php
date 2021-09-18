@@ -1,6 +1,6 @@
 <?php
 include 'includes/connect.php';
-if(!isset($_COOKIE['client']||$_COOKIE['client']=='NULL')){
+if(!isset($_COOKIE['client'])||$_COOKIE['client']=='NULL'){
 $_SESSION['msg']='<div class="alert alert-danger" role="alert">Login to continue</div>';
 header("location: ./login.php");
 }
