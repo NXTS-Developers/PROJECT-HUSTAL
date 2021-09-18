@@ -19,7 +19,7 @@ $mail->WordWrap=10000;
 $mail->isHTML(true);
 $mail->Subject='Activate Account'; 
 $host=$_SERVER['HTTP_HOST'];
-$link="https://".$_SERVER['HTTP_HOST']."/clientarea/activate.php?key=".md5($_COOKIE['client'])."&uid=".$_COOKIE['client']."&activate=true";
+$link="https://".$_SERVER['HTTP_HOST']."/clientarea/activate.php?key=".md5($_GET['uid'])."&uid=".$_GET['uid']."&activate=true";
 $mail->Body="
 <div class='container' style='margin-left:5%;margin-right:5%;margin-top:5%;'>
 <div style='border-radius:1px solid grey;border-radius:5px;box-shadow:1px 1px 5px grey;padding:20px;font-family: Arial, Helvetica, sans-serif;'>
