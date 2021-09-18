@@ -28,7 +28,7 @@ $app = $apiClient->getOrderStatus($_GET['sid']);
 				$End = $app['end_date'];
 			}
 ?>
-<div class="container">
+<div class="container"><br>
 <div class="card card-body">
 <div class="row">
 			<div class="col-md-6">
