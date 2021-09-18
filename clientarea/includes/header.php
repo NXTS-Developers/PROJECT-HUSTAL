@@ -75,7 +75,7 @@ header('location: login.php');
 </ul>
 </div>
 </div>
-</nav><br>
+</nav>
 <!-- Main Content -->
 <?php
 if($user['client_status']==0){
