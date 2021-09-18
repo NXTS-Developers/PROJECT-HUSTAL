@@ -25,7 +25,7 @@ include "includes/header.php";
 </div>
 <div class="col-lg-6 col-md-6"><br>
 <div class="card shadow-sm rounded"><br>
-<a href="tickets.php" style="text-decoration:none;" class="text-dark"><div class="card-body text-center">
+<a href="ssls.php" style="text-decoration:none;" class="text-dark"><div class="card-body text-center">
 <i class="fa fa-support fa-5x"></i><br><br>
 <h5 class="text-muted">Support Tickets(<?php echo mysqli_num_rows(mysqli_query($connect,"select * from vhost_ssl where client_id='".$user['client_id']."'"));?>)</h5>
 </div>
