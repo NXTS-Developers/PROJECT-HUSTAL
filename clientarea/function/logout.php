@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-if(isset($_COOKIE['client']&&$_COOKIE['client']!='NULL')){
+if(isset($_COOKIE['client'])&&$_COOKIE['client']!='NULL'){
 setcookie("client",NULL,-1,"/");
 $_SESSION['msg']='<div class="alert alert-success" role="alert">Successfully logged out.</div>';
 header("location: ../login.php");
