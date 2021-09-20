@@ -5,7 +5,7 @@ require "../../vendor/autoload.php";
 use \HansAdema\AnakeClient\Client;
 include "connect.php";
 $s=mysqli_query($connect,"select * from vhost_cpanel where client_id='".$_POST['id']."'");
-if(mysqli_num_rows($s)<4){
+if(mysqli_num_rows($s)<3){
 // create account
 if(isset($_POST['create'])){
 // setting up array
