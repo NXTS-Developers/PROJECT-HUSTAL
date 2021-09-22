@@ -15,7 +15,7 @@ $sql=mysqli_query($connect,"select * from vhost_cpanel where client_id='".$user[
 <div class="card-body">
 <h5 class="text-dark pull-left"><b>Accounts</b></h5>
 <?php
-if(mysqli_num_rows($sql)<3){
+if(mysqli_num_rows(mysqli_query($connect,"select * from vhost_cpanel where client_id='".$user['client_id']."' and cpanel_status=1"))<3){
 echo ' <a href="domainchecker.php" class="btn btn-info text-white btn-sm pull-right">Create Account</a>';
 }?>
 <div class="clearfix"></div><hr><?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];unset($_SESSION['msg']);}?>
