@@ -4,7 +4,7 @@ if(!isset($_COOKIE['client'])){
 header("location: login.php");
 }
 if(isset($_GET['aid'])){ 
-$sql=mysqli_fetch_assoc(mysqli_query($connect,"select cpanel_password from vhost_cpanel where cpanel_username='".$_GET['aid']."'"));
+$sql=mysqli_fetch_assoc(mysqli_query($connect,"select cpanel_password from vhost_cpanel where cpanel_username='".$_GET['aid']."' and client_id='".$user['client_id']."'"));
 if($sql['client_id']!=$user['client_id']){
 header('location: login.php');
 }
