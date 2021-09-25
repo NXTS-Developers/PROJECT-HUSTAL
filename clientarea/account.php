@@ -46,40 +46,28 @@ Account Details
 </div>
 <table>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>Username</b></small></td>
-<td><small class="text-muted px-5"><?php echo $sql['cpanel_username'];?></small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>Username</b><?php echo $sql['cpanel_username'];?></small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>Password</b></small></td>
-<td><small class="text-muted px-5"><?php echo $sql['cpanel_password'];?> </small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>Password</b><?php echo $sql['cpanel_password'];?> </small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>Status</b></small><span class="px-4"></span></td>
-<td><small class="text-muted px-4"><?php if($sql['cpanel_status']==1){echo "<span class='badge bg-success'>Active</span>";}else{ if($sql['cpanel_status']==2){echo "<span class='badge bg-warning'>Inactive</span>";}else{echo "<span class='badge bg-danger'>Suspended</span>";} }?></small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>Status</b><?php if($sql['cpanel_status']==1){echo "<span class='badge bg-success'>Active</span>";}else{ if($sql['cpanel_status']==2){echo "<span class='badge bg-warning'>Inactive</span>";}else{echo "<span class='badge bg-danger'>Suspended</span>";} }?></small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b> Label  </b></small><span class="px-4"><span class="px-1"></span></td>
-<td><small class="text-muted px-4"> <?php echo $sql['cpanel_label'];?> </small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b> Label  </b><?php echo $sql['cpanel_label'];?> </small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>Main Domain</b></small><span class="px-1"></td>
-<td><small class="text-muted px-4"><?php echo $sql['cpanel_client_username'].".".SITE_ADDR;?></small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>Main Domain</b><?php echo $sql['cpanel_client_username'].".".SITE_ADDR;?></small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>IP Address</b></small></td>
-<td><small class="text-muted px-5"><?php require_once "../vendor/user_info/UserInfo.php";echo UserInfo::get_ip();?></small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>IP Address</b><?php require_once "../vendor/user_info/UserInfo.php";echo UserInfo::get_ip();?></small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>Server IP</b></small><span class="px-1"></span></td>
-<td><small class="text-muted px-5">185.27.134.46 </small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>Server IP</b>185.27.134.46 </small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>Hosting Volume</b></small></td>
-<td><small class="text-muted px-3">Unknown</small></td>
-</tr>
-<tr class="list-group-item">
-<td><small class="text-muted"><b>Date Created</b></small><span class="px-3"></span></td>
-<td><small class="text-muted px-2"><?php echo $sql['cpanel_date'];?> </small></td>
+<td><small class="text-muted"><b>Date Created</b><?php echo $sql['cpanel_date'];?> </small></td>
 </tr>
 </table>
 </div>
