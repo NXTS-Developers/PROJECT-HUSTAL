@@ -79,20 +79,16 @@ MySQL Details
 </div>
 <table>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>MySQL Username</b></small></td>
-<td><small class="text-muted px-5"><?php echo $sql['cpanel_username'];?> </small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>MySQL Username</b><?php echo $sql['cpanel_username'];?> </small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>MySQL Password</b></small><span class="px-1"></span> </td>
-<td><small class="text-muted px-4"><?php echo $sql['cpanel_password'];?> </small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>MySQL Password</b><?php echo $sql['cpanel_password'];?> </small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>MySQL Hostname</b></small><span class="px-1"></span></td>
-<td><small class="text-muted px-4">sqlxxx.byethost.org</small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>MySQL Hostname</b>sqlxxx.byethost.org</small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>MySQL Port</b></small><span class="px-2"></span></td>
-<td><small class="text-muted px-5">  3306</small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>MySQL Port</b>3306</small></td>
 </tr>
 </table>
 </div><br>
@@ -102,20 +98,16 @@ FTP Details
 </div>
 <table>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>FTP Username</b></small></td>
-<td><small class="text-muted px-5"><?php echo $sql['cpanel_username'];?> </small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>FTP Username</b><?php echo $sql['cpanel_username'];?> </small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>FTP Password</b></small></td>
-<td><small class="text-muted px-5"><?php echo $sql['cpanel_password'];?> </small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>FTP Password</b><?php echo $sql['cpanel_password'];?> </small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>FTP Hostname</b></small></td>
-<td><small class="text-muted px-5">ftpupload.net</small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>FTP Hostname</b>ftpupload.net</small></td>
 </tr>
 <tr class="list-group-item">
-<td><small class="text-muted"><b>FTP Port</b></small><span class="px-4"></span><span class="px-2"></span></td>
-<td><small class="text-muted px-4">  21</small></td>
+<td><small class="text-muted d-flex justify-content-between align-items-center"><b>FTP Port</b>21</small></td>
 </tr>
 </table>
 </div><br>
