@@ -33,7 +33,7 @@ It can take upto 2 hours before respond
 <?php
 if(isset($_POST['add'])){
 $id=rand(00000000,99999999);
-$sql=mysqli_query($connect,"insert into vhost_ticket(ticket_id,client_id,ticket_subject,ticket_content,ticket_date,ticket_time,ticket_status) values ('$id','".$user['client_id']."','".$_POST['subject']."','".$_POST['content']."','".date("d-m-Y")."','".date("h:i a")."','0')");
+$sql=mysqli_query($connect,"insert into vhost_ticket(ticket_id,client_id,ticket_subject,ticket_content,ticket_date,ticket_time,ticket_status) values ('$id','".$user['client_id']."','".$_POST['subject']."','".htmlentities($_POST['content'])."','".date("d-m-Y")."','".date("h:i a")."','0')");
 if($sql>0){
 include "mail/newticket.php";
 $_SESSION['msg']='<div class="alert alert-success" role="alert">Ticket created successfully.</div>';
