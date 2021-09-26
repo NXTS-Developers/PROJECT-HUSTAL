@@ -20,7 +20,7 @@ $hash=base64_encode($pwd);
 <div class="list-group-item">
 <div class="row"><?php if($sql['cpanel_status']==1){?>
 <div class="col-lg-4 col-md-4 d-grid">
-<a href="cpanel.php?aid=<?php echo $_GET['aid'];?>" target="_blank" class="btn btn-success">Condivol Panel</a>
+<a href="cpanel.php?aid=<?php echo $_GET['aid'];?>" target="_blank" class="btn btn-success">Control Panel</a>
 </div>
 <div class="col-lg-4 col-md-4 d-grid">
 <a href="https://filemanager.ai/new/#/c/ftpupload.net/<?php echo $sql['cpanel_username']."/".$hash?>" target="_blank" class="btn btn-primary">File Manager</a>
