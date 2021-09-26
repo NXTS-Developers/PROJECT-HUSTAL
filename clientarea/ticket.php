@@ -74,7 +74,7 @@ You cannot reply to this ticket because this ticket had been closed. if you have
 </div>
 <?php
 if(isset($_POST['send'])){
-$sql=mysqli_query($connect,"insert into vhost_ticket_reply(ticket_id,reply_by,reply_content,reply_date,reply_time) values ('".$_POST['tid']."','1','".$_POST['reply']."','".date("d-m-Y")."','".date("h:i a")."')");
+$sql=mysqli_query($connect,"insert into vhost_ticket_reply(ticket_id,reply_by,reply_content,reply_date,reply_time) values ('".$_POST['tid']."','1','".htmlentites($_POST['reply'])."','".date("d-m-Y")."','".date("h:i a")."')");
 if($sql>0){
 include "mail/ticket.php";
 $_SESSION['msg']='<div class="alert alert-success" role="alert">Reply added successfully.</div>';
