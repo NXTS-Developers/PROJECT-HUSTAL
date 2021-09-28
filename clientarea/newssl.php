@@ -1,5 +1,5 @@
 <?php
-$title="Create Account";
+$title="Create SSL";
 $desc="";
 include "includes/header.php";
 ?>
@@ -24,8 +24,28 @@ unset($_SESSION['msg']);
 </div>
 <input type="hidden" name="id" value="<?php echo $user['client_id'];?>">
 <div class="mb-3">
-<label class="form-label text-muted">CSR Code</label>
-<textarea name="csr" class="form-control" rows="12"></textarea>
+<label class="form-label text-muted">Domain</label>
+<input type="text" name="domain" class="form-control"y>
+</div>
+<div class="mb-3">
+<label class="form-label text-muted">Organization</label>
+<input type="text" name="organization" class="form-control"y>
+</div>
+<div class="mb-3">
+<label class="form-label text-muted">Organization Unit</label>
+<input type="text" name="departament" class="form-control"y>
+</div>
+<div class="mb-3">
+<label class="form-label text-muted">Country Code</label>
+<input type="text" name="country" class="form-control"y>
+</div>
+<div class="mb-3">
+<label class="form-label text-muted">State / Province</label>
+<input type="text" name="state" class="form-control"y>
+</div>
+<div class="mb-3">
+<label class="form-label text-muted">City</label>
+<input type="text" name="city" class="form-control"y>
 </div>
 <div class="d-grid">
 <input type="submit" name="create" class="btn btn-success" value="CREATE SSL">
