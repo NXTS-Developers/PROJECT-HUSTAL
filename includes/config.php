@@ -23,4 +23,7 @@ define('MAIL_HOST','SMTP Host');// smtp.example.com
 // SSL Info
 define('SSL_USERNAME', 'SSL API Username');
 define('SSL_PASSWORD', 'SSL API Password');
+// Captcha Info
+$captcha_site = "reCaptcha Site Key";
+$captcha_secret="reCaptcha Secret Key";
 ?>
