@@ -4,6 +4,7 @@ $desc="";
 include "includes/header.php";
 require '../vendor/gogetssl/GoGetSSLApi.php';
 $sql=mysqli_query($connect,"select * from vhost_ssl where ssl_key='".$_GET['sid']."' and client_id='".$user['client_id']."'");
+$get_sql=mysqli_fetch_assoc($sql);
 if(!mysqli_num_rows($sql)>0){
 	header('location: ssls.php');
 }
@@ -69,6 +70,10 @@ $app = $apiClient->getOrderStatus($_GET['sid']);
 	<b>CSR Code:</b>
 	<pre class="my-0"><textarea class="form-control" style="height: 250px" readonly><?php echo $app['csr_code'];?></textarea></pre>
 </div>
+<div class="my-1 mx-2">
+	<b>Private Key:</b>
+	<pre class="my-0"><textarea class="form-control" style="height: 250px" readonly><?php echo $get_sql['private_key'];?></textarea></pre>
+</div>
 <div class="mx-1 my-1">
 	<b>CNAME Record:</b>
 	<pre class="my-0"><input type="text" class="form-control" value="<?php echo $Record['0'];?>" readonly></pre>
@@ -96,6 +101,10 @@ $app = $apiClient->getOrderStatus($_GET['sid']);
 <div class="my-1 mx-2">
 	<b>CSR Code:</b>
 	<pre class="my-0"><textarea class="form-control" style="height: 250px" readonly><?php echo $app['csr_code'];?></textarea></pre>
+</div>
+<div class="my-1 mx-2">
+	<b>Private Key:</b>
+	<pre class="my-0"><textarea class="form-control" style="height: 250px" readonly><?php echo $get_sql['private_key'];?></textarea></pre>
 </div>
 			</div>
 			<?php } elseif($app['status']=='expired'){ ?>
