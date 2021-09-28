@@ -52,6 +52,7 @@ CREATE TABLE IF NOT EXISTS `vhost_cpanel` (
 CREATE TABLE IF NOT EXISTS `vhost_ssl` (
   `ssl_id` int(11) NOT NULL AUTO_INCREMENT,
   `ssl_key` int(11) NOT NULL,
+  `private_key` varchar(256) NOT NULL,
   `client_id` int(11) NOT NULL,
   PRIMARY KEY (`ssl_id`)
 )
