@@ -1,6 +1,11 @@
 <?php
 include "connect.php";
 if(isset($_POST['signup'])){
+$captcha=$_POST["g-recaptcha-response"];
+$url="https://www.google.com/recaptcha/api/siteverify?secret=".urlencode($captcha_secret)."&response=".urlencode($captcha)." ";
+$response=file_get_contents($url);
+$responsekey=  json_decode($response,TRUE);
+if($responsekey["success"]){
 $check=mysqli_query($connect,"select * from vhost_client where client_email='".$_POST['email']."'");
 if(mysqli_num_rows($check)>0){
 $_SESSION['msg']='<div class="alert alert-danger" role="alert"> Account already exist. </div>';
@@ -26,5 +31,9 @@ $_SESSION['msg']='<div class="alert alert-danger" role="alert"> Password doesnt 
 header("location: ../login.php");
 }
 }
+
+else{
+$_SESSION['msg']='<div class="alert alert-danger" role="alert">Complete Captcha Verification.</div>';
+header("location: ../signup.php");}
 }
 ?> 
