@@ -1,6 +1,20 @@
 <?php
 require 'connect.php';
+require "../../includes/config.php";
 require '../../vendor/gogetssl/GoGetSSLApi.php';
+$CSRData = array(
+    'csr_commonname' => $_POST['domain'],
+    'csr_organization' => $_POST['organization'],
+    'csr_department' => $_POST['departament'],
+    'csr_city' => $_POST['city'],
+    'csr_state' => $_POST['state'],
+    'csr_country' => $_POST['country'],
+    'csr_email' => $_POST['email']
+);
+$apiClient = new GoGetSSLApi();
+$token = $apiClient->auth(SSL_USERNAME, SSL_PASSWORD);
+$csrorder = $apiClient->generateCSR($CSRData);
+$csr_code = $csrorder['csr_code'];
 if(isset($_POST['create'])){
 	$Country = 'PK';
 	$Company = 'Hostella';
@@ -13,7 +27,7 @@ if(isset($_POST['create'])){
 	$Name = $_POST['name'];
 	$FormData = array(
 		'product_id'       => 65,
-		'csr' 			   => $_POST['csr'],
+		'csr' 			   => $csr_code,
 	    'server_count'     => "-1",
 	    'period'           => 3,
 	    'approver_email'   => 'mahtabhassan159@gmail.com',
@@ -41,8 +55,9 @@ if(isset($_POST['create'])){
 	$apiClient = new GoGetSSLApi();
 	$token = $apiClient->auth(SSL_USERNAME, SSL_PASSWORD);
 	$Data = $apiClient->addSSLOrder($FormData);
+	$csr_key = $csrorder['csr_key'];
 	if(count($Data)>4){
-		$sql = mysqli_query($connect,"INSERT INTO `vhost_ssl`(`ssl_key`,`client_id`) VALUES ('".$Data['order_id']."','".$ID."')");
+		$sql = mysqli_query($connect,"INSERT INTO `vhost_ssl`(`ssl_key`,`client_id`,`private_key`) VALUES ('".$Data['order_id']."','".$ID."','".$csr_key."')");
 		if($sql){
 			$_SESSION['msg'] = '<div class="alert alert-success" role="alert">
 										  <button class="close" data-dismiss="alert" type="button" aria-label="Close">
@@ -57,7 +72,7 @@ if(isset($_POST['create'])){
 										  <button class="close" data-dismiss="alert" type="button" aria-label="Close">
 										    <span aria-hidden="true">&times;</span>
 										  </button>
-										  Something wemt'."'".' <b>weong!</b>
+										  Something went'."'".' <b>wrong!</b>
 										</div>';
 			header('location: ../newssl.php');
 		}
