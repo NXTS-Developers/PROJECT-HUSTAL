@@ -7,7 +7,6 @@ if($_COOKIE['client']=='NULL'||!isset($_COOKIE['client'])){
 <title>Client Signup - <?php echo SITE_NAME?></title>
 <link rel="stylesheet" href="../template/css/bootstrap.min.css">
 <meta name="viewport" content="width=device-width">
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 <div class="container">
@@ -35,9 +34,6 @@ if($_COOKIE['client']=='NULL'||!isset($_COOKIE['client'])){
 </div>
 <div class="mb-3">
 <input type="checkbox" class="form-check-input" name="check" value="1" required> <label class="form-check-label">I Agree with Term of Service</label>
-</div>
-<div class="mb-3">
-<div class="g-recaptcha" data-sitekey="<?php echo $captcha_site?>"></div>
 </div>
 <div class="d-grid">
 <input class="btn btn-outline-success" type="submit" name="signup" value="SIGNUP"> <br>
