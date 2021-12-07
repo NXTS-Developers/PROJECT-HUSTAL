@@ -111,5 +111,37 @@ FTP Details
 </div>
 </div>
 </div><br>
-</div><br> 
+<div class="col-lg-12 col-md-12">
+<div class="list-group shadow-sm rounded">
+<div class="list-group-item fs-5 text-dark">
+Domains
 </div>
+<?php 
+include __DIR__.'/../vendor/autoload,php';
+use \HansAdema\AnakeClient\Client;
+if($sql['cpanel_status']==1){
+$client = Client::create();
+$request = $client->getUserDomains(['username' => $sql['cpanel_username']]);
+$response = $request->send();
+$res = $response->getDomains();
+if(count($res)>0){
+foreach($res as $domain){
+$link = "https://filemanager.ai/new/#/c/ftpupload.net/".$sql['cpanel_username'].'/'.base64_encode(json_encode(['t'=>'ftp','c'=>['v'=>1,'p'=>$sql['cpanel_password'],'i' => "/".$domain."/htdocs/"]]));
+echo "<div class='d-flex justify-content-between align-items-center list-group-item'>
+<span>".$domain."</span>
+<span><a href='".$link."' class='btn btn-sm btn-square btn-danger text-white' target='_blank'><i class='fa fa-fire'></i></a></span>
+</div>";
+}
+}
+else{
+echo "<p class='text-center list-group-item'>No Domain Found</p>";
+}
+}
+else{
+echo "<p class='text-center list-group-item'>No Domain Found</p>";
+}
+?>
+<br>
+</div>
+</div>
+</div> 
