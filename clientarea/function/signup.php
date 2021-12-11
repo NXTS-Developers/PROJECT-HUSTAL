@@ -25,4 +25,5 @@ else{
 $_SESSION['msg']='<div class="alert alert-danger" role="alert"> Password doesnt match </div>';
 header("location: ../login.php");
 }
+}
 ?> 
