@@ -6,6 +6,7 @@ Project Hustal is a free of cost MOFH clientarea for account management and supp
 ![AppVeyor](https://img.shields.io/badge/Build-passed-lightgreen)
 ![AppVeyor](https://img.shields.io/badge/dependencies-php-lightgrey)
 ![AppVeyor](https://img.shields.io/badge/Interface-light-lightgrey)
+![AppVeyor](https://img.shields.io/badge/Development-discontinued-lightgrey)
 
 ## Table of Content 
 - [Features](#features)
