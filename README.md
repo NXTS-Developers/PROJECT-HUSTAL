@@ -29,7 +29,8 @@ Hustal features are listed below:
 
 ## Requirements
 Your server need to met minimal requirements to run hustal
-- php 5.6 or above
+**PHP Version 8.0 and above does not work currently.**
+- php 5.6 to 7.4 
 - mysql 5.7 or above
 
 ## Installation 
