@@ -1,6 +1,6 @@
 <?php
-ob_start();
-session_start();
+
+include "connect.php";
 if(isset($_POST['forget'])){
 $uid=$_POST['email'];
 $key=md5($uid);
