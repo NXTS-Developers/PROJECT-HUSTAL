@@ -19,7 +19,7 @@ if($sql['cpanel_status']==1){
 ?>
 <div class="card shadow-sm rounded">
 <div class="card-body">
-<form action="" method="post">
+<form action="<?php echo htmlspecialchars($_SERVER[‘PHP_SELF’]); ?>" method="post">
 <h3 class="text-dark text-center">Account Label</h3><hr>
 <div class="mb-3">
 <label class="text-muted form-label">Account Label</label>
